@@ -1,0 +1,8 @@
+chosen=$(printf "  Power Off\n  Restart\n  Lock" | rofi -dmenu -i -theme-str '@import "$HOME/.config/rofi/power.rasi"')
+
+case "$chosen" in
+	"  Power Off") sudo /sbin/shutdown -h now ;;
+	"  Restart") sudo /sbin/shutdown -r now ;;
+	"  Lock") slimlock ;;
+	*) exit 1 ;;
+esac

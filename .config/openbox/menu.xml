@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="Kitty" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/terminal.svg">
+      <action name="Execute">
+        <command>kitty</command>
+      </action>
+    </item>
+    <item label="PCManFM" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/system-file-manager.svg">
+      <action name="Execute">
+        <command>pcmanfm</command>
+      </action>
+    </item>
+    <item label="LibreWolf" icon="$HOME/.config/openbox/icons/librewolf.svg">
+      <action name="Execute">
+        <command>librewolf-bin</command>
+      </action>
+    </item>
+    <item label="NeoVim" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/neovim.svg">
+      <action name="Execute">
+        <command>kitty nvim</command>
+      </action>
+    </item>
+    <item label="VSCode" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/vsc.svg">
+      <action name="Execute">
+        <command>code</command>
+      </action>
+    </item>
+    <menu id="0.778998520548583" label="Development" icon="$HOME/.local/share/icons/Fluent-dark/32/categories/applications-development.svg">
+      <item label="JetBrains Toolbox" icon="$HOME/.local/share/JetBrains/Toolbox/toolbox.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox</command>
+        </action>
+      </item>
+      <item label="CLion" icon="$HOME/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/clion.sh</command>
+        </action>
+      </item>
+      <item label="DataGrip" icon="$HOME/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/datagrip/ch-0/213.6777.22/bin/datagrip.sh</command>
+        </action>
+      </item>
+      <item label="GoLand" icon="$HOME/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/213.7172.22/bin/goland.sh</command>
+        </action>
+      </item>
+      <item label="IntelliJ IDEA Community Edition" icon="$HOME/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/bin/idea.sh</command>
+        </action>
+      </item>
+      <item label="IntelliJ IDEA Ultimate" icon="$HOME/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/213.7172.25/bin/idea.sh</command>
+        </action>
+      </item>
+      <item label="Rider" icon="$HOME/.local/share/JetBrains/Toolbox/apps/Rider/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/Rider/ch-0/213.6775.4/bin/rider.sh</command>
+        </action>
+      </item>
+      <item label="WebStorm" icon="$HOME/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/.icon.svg">
+        <action name="Execute">
+          <command>$HOME/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/213.6777.57/bin/webstorm.sh</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="0.764306996573346" label="Graphics" icon="$HOME/.local/share/icons/Fluent-dark/32/categories/applications-graphics.svg">
+      <item label="Flameshot" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/flameshot.svg">
+        <action name="Execute">
+          <command>flameshot gui</command>
+        </action>
+      </item>
+      <item label="GNU Image Manipulation Program" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/gimp.svg">
+        <action name="Execute">
+          <command>gimp</command>
+        </action>
+      </item>
+      <item label="Inkscape" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/inkscape.svg">
+        <action name="Execute">
+          <command>inkscape</command>
+        </action>
+      </item>
+    </menu>
+    <separator/>
+    <menu id="0.334783216997266" label="Advanced Settings" icon="$HOME/.local/share/icons/Fluent-dark/32/categories/applications-system.svg">
+      <item label="Dunst RC">
+        <action name="Execute">
+          <command>kitty nvim $HOME/.config/dunst/dunstrc</command>
+        </action>
+      </item>
+      <item label="Tint2 Panel">
+        <action name="Execute">
+          <command>kitty nvim $HOME/.config/tint2/tint2rc</command>
+        </action>
+      </item>
+      <menu id="0.474126631384458" label="Openbox" icon="$HOME/.local/share/icons/Fluent-dark/scalable/apps/openbox.svg">
+        <item label="Openbox Autostart"><action name="Execute"><command>kitty nvim ~/.config/openbox/autostart</command></action></item>
+        <item label="Openbox RC"><action name="Execute"><command>kitty nvim ~/.config/openbox/rc.xml</command></action></item>
+        <item label="Openbox Menu"><action name="Execute"><command>kitty nvim ~/.config/openbox/menu.xml</command></action></item>
+        <item label="Reconfigure Openbox"><action name="Execute"><command>openbox --reconfigure</command></action></item>
+      </menu>
+    </menu>
+  </menu>
+</openbox_menu>

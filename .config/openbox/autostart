@@ -1,0 +1,4 @@
+nitrogen --restore &
+tint2 &
+dunst -conf $HOME/.config/dunst/dunstrc &
+picom --no-vsync &
